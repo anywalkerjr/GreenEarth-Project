@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    background-color: #202020;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+header {
+    background-color: #202020;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    border-bottom: #6D6D6D solid 1px;
+    align-items: center;
+    color: white;
+    height: min-content;
+    position: sticky;
+    top: 0;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+}
+nav > li {
+    list-style: none;
+}
+#choosen {
+    border-bottom: white 2px solid;
+    padding: 5%;
+}
+.login-menu {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    text-decoration: underline;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.a1, .a2, .a3 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    width: 75%;
+}
+article {
+    margin: 5%;
+}
+.main-text {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.a1In > p, .a2In > p {
+    font-size: 18px;
+}
+.a1 > p, .a2 > p, li {
+    font-size: 18px;
+}
+.a1In, .a2In  {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+
+}
+.a3 {
+    display: flex;
+    align-items: center;
+}
+.sub-title {
+    color:#808080
+}
+.yt-video {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    border-radius: 40px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: #6D6D6D solid 1px;
+    align-items: center;
+    padding: 15px 0 15px 0;
+}
+.calculator {
+    margin: 40px;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+.fuel > label {
+    font-size: 24px;
+}
+.fuel > select, .fuel > input{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.calculator > button {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .2s;
+}
+.calculator > button:hover {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #202020;
+    color: white;
+    border: #808080 solid 2px;
+    transition: .2s;
+}
+.fuel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    background-color: #87B43E;
+    padding: 15px;
+}
+
+.ammount {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    background-color: #87B43E;
+    padding: 15px;
+
+}
+.ammount > label {
+    font-size: 24px;
+}
+.ammount > select{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+}
+.ammount > input{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+    width: 12%;
+    border: none;
+}
+nav> li > a {
+    text-decoration: none;
+    color: white;
+}
+#result {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.newsBanner {
+    background-color: white;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}

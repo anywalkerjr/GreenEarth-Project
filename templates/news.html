@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    {% block content %}
+    <header>
+        <div class="logo">
+            <img src="/static/img/Logo 1.png" alt="GreenEarth">
+        </div>
+        <nav>
+            <li><a href="{{ url_for('index')}}">Главная</a></li>
+            <li><a href="{{ url_for('calculator')}}">Калькулятор</a></li>
+            <li id="choosen" >Новости</li>
+        </nav>
+    </header>
+    <main>
+    {% for news in latestNews %}
+        <div class='newsBanner'>
+            <div class="newsHead">
+                <h1>{{ news["title"] }}</h1>
+                <h3>Дата: {{ news["date"] }}, Просмотров: {{ news["views"] }}</h3>
+            </div>
+            {{ news["text"]|safe }}
+            
+        </div>
+    {% endfor %}
+    </main>
+    <footer>
+        <div class="footer-logo">
+                <img src="/static/img/Logo 2.png" alt="Logo">
+        </div>
+        <div class="communication">
+            <img src="/static/img/Exclude.png" alt="Discord-bot">
+            <img src="/static/img/Github.png" alt="Github">
+        </div>
+    </footer>
+    {% endblock %}
+</body>
+</html>
