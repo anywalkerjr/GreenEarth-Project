@@ -10,7 +10,7 @@ def parasingLink(url):
     temp = bs.find('text').find_all('p')
     text = ''
     for p in temp:  
-        text += p.prettify(formatter="minimal") + ' '
+        text += p.prettify(formatter="minimal")
     
     newsInfo = bs.find('newsinfo').text
     
